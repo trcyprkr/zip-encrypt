@@ -1,0 +1,1 @@
+tar -czvf %n.tar.gz %N && openssl enc -k yourpasswordhere -aes-256-cbc -salt -in %n.tar.gz -out %n.tar.gz.enc && rm -f %n.tar.gz
